@@ -1,0 +1,3 @@
+ACORDARSE DE DAR DRIVER CH340
+
+https://electrocrea.com/blogs/tutoriales/como-instalar-driver-ch340-para-arduinos-genericos
