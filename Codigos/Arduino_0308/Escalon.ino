@@ -26,7 +26,6 @@ void escalon() {
   Timer1.pwm(9, pw);
 }
 
-
 void escalon2() {
   pw = analogRead(A0);
   Timer1.pwm(9, pw);
@@ -57,14 +56,11 @@ void escalon3() {
   Timer1.pwm(9, pw);
 }
 
-
 void escalon4() {
-
   if (tiempo >= 20000 & tiempo < 35000 ) {
     //pw=325;     //// supongo 21.05Hz
     pw = 193;   //// supongo 21.05Hz
   }
-
   if (tiempo >= 35000 & tiempo < 55000) { //
     //pw=595;    /////Supongo 32.73 HZ
     pw = 314;   //// supongo 21.05Hz
