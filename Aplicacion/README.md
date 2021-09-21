@@ -1,4 +1,4 @@
-##archivos ejecutable
+## Archivos ejecutables
 
 application.windows64: Aplicación para Windows
 application.windows32: Aplicación para Windows
