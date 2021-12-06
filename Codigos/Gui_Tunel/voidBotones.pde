@@ -191,6 +191,7 @@ for(int f= 0 ; f<table1.getRowCount(); f++){
   ddl1.setLabel("Elija archivo");
  
  DatosWrite2 = (Dato0 + "," + Dato1 + "," + Dato2 + "," + Dato3 + "," + Dato4 + "," + Dato5 + "," + Dato6  + Dato7+ ","+'\n');
+ println(DatosWrite2);
  Arduino.write(DatosWrite2);
 Dato6= "0";
 Dato7="";
