@@ -178,10 +178,10 @@ void ICONO(){ //autofuncion- boton de enviar el archivo
 table1 = loadTable("autofun/" +fitem, "header"); //leo el archivo donde estan los escalones
 
 float [] yfun = new float [table1.getRowCount()];
-float [] dTiem = new float [table1.getRowCount()];
+int [] dTiem = new int [table1.getRowCount()];
 for(int f= 0 ; f<table1.getRowCount(); f++){
     yfun [f] = table1.getFloat(f, 0); 
-    dTiem [f] =  table1.getFloat(f, 1);
+    dTiem [f] =  table1.getInt(f, 1);
 }   ///SI AL FINAL MARCA NULL O NaN ES PORQ EL ARCHIVO CSV TIENE LINEAS EN BLANCO
    for (int i = 0; i < yfun.length; i++) {
     Dato7 = Dato7 + "," + str(yfun[i]) + "," + str(dTiem[i]);
@@ -191,6 +191,7 @@ for(int f= 0 ; f<table1.getRowCount(); f++){
   ddl1.setLabel("Elija archivo");
  
  DatosWrite2 = (Dato0 + "," + Dato1 + "," + Dato2 + "," + Dato3 + "," + Dato4 + "," + Dato5 + "," + Dato6  + Dato7+ ","+'\n');
+ println(DatosWrite2);
  Arduino.write(DatosWrite2);
 Dato6= "0";
 Dato7="";

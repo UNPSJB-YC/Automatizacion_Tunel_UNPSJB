@@ -4,4 +4,6 @@ application.windows64: Aplicación para Windows
 
 application.windows32: Aplicación para Windows
 
-captura_datos.m archivo para Matlab dónde se pueden leer los .csv guardados
+#Driver CH340
+Descargar driver para utilizar con Arduino Nano en:
+https://sparks.gogo.co.nz/ch340.html 
